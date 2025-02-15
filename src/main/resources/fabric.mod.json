@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bmbl-opossum-mod",
+	"version": "${version}",
+	"name": "Opossum Mod",
+	"description": "I'm losing my fucking mind",
+	"authors": [
+		"B"
+	],
+	"contact": {
+		"homepage": "https://bmbl.dev/",
+		"sources": "https://github.com/bmbl-dev/opossum-fabric-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bmbl-opossum-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.bmbl.opossum.OpossumMod"
+		],
+		"fabric-datagen": [
+			"dev.bmbl.opossum.OpossumModDataGenerator"
+		],
+		"client": [
+			"dev.bmbl.opossum.OpossumModClient"
+		]
+	},
+	"mixins": [
+		"bmbl-opossum-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
